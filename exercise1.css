@@ -3,16 +3,20 @@
     padding: 0;
     margin: 0;
 }
+:root{
+    --color-primario:hsl(81, 90%, 71%);
+    --color-secundario:hsl(262, 70%, 65%);
+
+}
 @font-face {
     font-family: 'NanumGothicCoding';
     src: url('./Fonts/NanumGothicCoding-Bold.ttf') format('truetype');
 }
 head {
-
+    
     text-align: center;
     margin: 10px;
     padding: 25px;
-    
 }
 a{
     text-decoration: none;
@@ -21,25 +25,22 @@ a{
 }
 body {
     font-family: 'NanumGothicCoding';
-    background-color: grey;
     color: #000000;
     height: 100vh;
     display: flex;
     flex-direction: column;
-  
-    
-
+    background-color: var(--color-secundario);
 }
 
 header {
-    background-color: #949494;
     text-align: left;
     text-align: center;
+    background-color: var(--color-primario);
 }
 
 h1 {
     font-size: 50px;
-    color: #444444;
+    color: black;
 }
 h1,h2{
     font-family: "Unlock", serif;;
@@ -47,14 +48,15 @@ h1,h2{
 nav ul {
     list-style-type: none;
     padding: 15px;
-    background-color: #afafaf;
+    background-color: var(--color-primario);
+
 }
 
 nav ul li {
     display: inline;
     margin: 15px;
     padding: 4px;
-    box-shadow: 1px 2px 4px #9e9696;
+    box-shadow: 1px 3px 1px var(--color-secundario);
     border-radius: 10px ;
 }
 main{
@@ -66,9 +68,8 @@ section {
     border: solid black 2px;
     border-radius: 10px;
     padding: 12px;
-    max-width: 75vh;
     min-height: 20vh;
-    box-shadow: 1px 2px 15px black;
+    box-shadow: 1px 3px 1px var(--color-primario);
     
 }
 
@@ -85,9 +86,8 @@ section p {
 }
 
 footer {
-    background-color: #949494;
+    background-color: var(--color-primario);
     text-align: center;
     min-height: 5vh;
     padding: 20px;
-
 } 

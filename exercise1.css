@@ -3,6 +3,10 @@
     padding: 0;
     margin: 0;
 }
+@font-face {
+    font-family: 'NanumGothicCoding';
+    src: url('./Fonts/NanumGothicCoding-Bold.ttf') format('truetype');
+}
 head {
 
     text-align: center;
@@ -16,12 +20,15 @@ a{
     
 }
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'NanumGothicCoding';
     background-color: grey;
     color: #000000;
     height: 100vh;
     display: flex;
     flex-direction: column;
+  
+    
+
 }
 
 header {
@@ -34,7 +41,9 @@ h1 {
     font-size: 50px;
     color: #444444;
 }
-
+h1,h2{
+    font-family: "Unlock", serif;;
+}
 nav ul {
     list-style-type: none;
     padding: 15px;

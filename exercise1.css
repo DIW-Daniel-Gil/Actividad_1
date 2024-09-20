@@ -4,13 +4,15 @@
     margin: 0;
 }
 :root{
-    --color-primario:hsl(81, 90%, 71%);
-    --color-secundario:hsl(262, 70%, 65%);
-
+    --primary-color: hsl(180, 90%, 45%);
+    --secondary-color:hsl(179, 45%, 39%);
+    --fontPrimary: "Unlock", "sans-serif";
+    --fontSecond: 'NanumGothicCoding';
 }
 @font-face {
     font-family: 'NanumGothicCoding';
-    src: url('./Fonts/NanumGothicCoding-Bold.ttf') format('truetype');
+    src: url('../Actividad_1/Fonts/NanumGothicCoding-Regular.woff2') format('woff2'),
+    url('./Fonts/NanumGothicCoding-Bold.ttf') format('truetype');
 }
 head {
     
@@ -21,10 +23,9 @@ head {
 a{
     text-decoration: none;
     color: black;
-    
 }
 body {
-    font-family: 'NanumGothicCoding';
+    font-family: var(--fontSecond);
     color: #000000;
     height: 100vh;
     display: flex;
@@ -35,20 +36,21 @@ body {
 header {
     text-align: left;
     text-align: center;
-    background-color: var(--color-primario);
+    background-color: var(--primary-color);
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 60px;
     color: black;
 }
 h1,h2{
-    font-family: "Unlock", serif;;
+    font-family: var(--fontPrimary);
 }
 nav ul {
     list-style-type: none;
     padding: 15px;
-    background-color: var(--color-primario);
+    background-color: var(--primary-color);
+    font-size: 20px;
 
 }
 
@@ -56,8 +58,10 @@ nav ul li {
     display: inline;
     margin: 15px;
     padding: 4px;
-    box-shadow: 1px 3px 1px var(--color-secundario);
-    border-radius: 10px ;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    font-family: var(--fontPrimary);
+
 }
 main{
     height: 100%;
@@ -69,7 +73,7 @@ section {
     border-radius: 10px;
     padding: 12px;
     min-height: 20vh;
-    box-shadow: 1px 3px 1px var(--color-primario);
+    box-shadow: 1px 3px 1px var(--primary-color);
     
 }
 
@@ -86,7 +90,8 @@ section p {
 }
 
 footer {
-    background-color: var(--color-primario);
+    background-color: var(--primary-color);
+    font-family: var(--fontPrimary);
     text-align: center;
     min-height: 5vh;
     padding: 20px;

@@ -5,7 +5,7 @@
 }
 :root{
     --primary-color: hsl(180, 90%, 45%);
-    --secondary-color:hsl(179, 45%, 39%);
+    --secondary-color:hsl(179, 50%, 58%);
     --fontPrimary: "Unlock", "sans-serif";
     --fontSecond: 'NanumGothicCoding';
 }
@@ -30,7 +30,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: var(--color-secundario);
+    background-color: var(--secondary-color);
 }
 
 header {

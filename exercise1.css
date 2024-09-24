@@ -68,13 +68,15 @@ nav ul li {
 main{
    display: flex;
    flex-grow: 1;
+   gap: 3em;
+   justify-content:center;
 }
 section {
     margin: 20px;
     border: solid black 2px;
     border-radius: 10px;
     padding: 12px;
-    width: 35%;
+    width: 25%;
     background-color: var(--myWhite);
     align-self: flex-start;
 
